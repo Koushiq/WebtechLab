@@ -64,7 +64,7 @@
                 
             </table>
         </form>
-        <form>
+        <form action="details.php" method="get">
             <table border=1>
                <th>
                    id
@@ -96,12 +96,12 @@
 
                             echo ' 
                             <tr>
-                            <td>"'.$id.'"</td>
-                            <td>"'.$name.'"</td>
-                            <td>"'.$price.'"</td>
-                            <td>"'.$quantity.'"</td>
+                            <td><a href="details.php?id='.$id.'" >'.$id.'</td>
+                            <td><a href="details.php?id='.$id.'">'.$name.'</td>
+                            <td><a href="details.php?id='.$id.'">'.$price.'</td>
+                            <td><a href="details.php?id='.$id.'">'.$quantity.'</td>
                             <td><a href="#"> edit</td>
-                            <td><a href="#"> delete</td>
+                            <td><a href="delete.php?details.php?id='.$id.'" > delete</td>
                             </tr> 
                             ';
 
